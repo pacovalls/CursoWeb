@@ -1,7 +1,19 @@
+
+<link href="https://fonts.googleapis.com/css2?
+    family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?
+    family=Anton&display=swap&subset=latin-ext" rel="stylesheet">
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .titulos {
 
-    color : red;
+    color: #000000;
     text-align: center;
+    font-family: 'Anton', sans-serif;
 
 }
 
