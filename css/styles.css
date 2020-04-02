@@ -1,0 +1,16 @@
+.titulos {
+
+    color : red;
+    text-align: center;
+
+}
+
+.parrafo {
+    text-align:justify; 
+    color:blue;
+    margin-top: 10px;
+    border: 2px black solid;
+    padding: 10 px;
+
+}
+
