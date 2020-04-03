@@ -1,3 +1,14 @@
 nav {
     style="margin-top:50px";
 }
+
+#slogan {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 15 px;
+}
+
+#slogan i {
+    font-size: 32px;
+    color: #5bc5ed;
+}
