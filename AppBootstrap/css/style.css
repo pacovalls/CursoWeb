@@ -1,5 +1,5 @@
 nav {
-    style="margin-top:50px";
+    style="margin-top:150px";
 }
 
 #slogan {
@@ -11,4 +11,11 @@ nav {
 #slogan i {
     font-size: 32px;
     color: #5bc5ed;
+}
+
+footer .col-sm-6 {
+
+    min-height: 120px;
+
+
 }

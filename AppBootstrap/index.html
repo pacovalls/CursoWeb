@@ -17,16 +17,26 @@
 <body>
     <header class="container-fluid">
      <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-4">
                 <a href="index.html" title="Event Factory">
-                    <img src="img/Logo_Ef.png" alt="Logo Even Factory eventos">
+                    <img src="img/Logo_Ef.png" class="img-responsive" alt="Logo Even Factory eventos" />
                 </a>
             </div>
 
-            <div class="col-md-4 col-md-offest-4">
+            <div class="col-md-4 col-md-offset-4">
                 <nav> 
-                    <a href="#" title="La Agencia" class="col-md-4">La Agencia</a>
-                    <a href="#" title="Contacto" class="col-md-4">Contacto</a>
+                    <ul class="nav nav-pills">
+                       <li><a href="#">La Agencia</a></li> 
+                       <li><a href="#">Eventos</a></li>
+                       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" 
+                         role="button" aria-haspopup="true" aria-expanded="false">Contacto <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.google.es"  target="_blank">Localización</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Formulario</a></li>
+                            </ul>
+                     </li> 
+                 </ul>   
                 </nav>
             </div>           
      </div>
@@ -39,30 +49,35 @@
 
     <footer class="container-fluid">
         <div class="row well">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
             <address>
                 <h3> Event Factory</h3>
-                Calle Colón 47, Planta 5 - Despacho 7A <br> 46002 Valencia (Valencia)
+                Calle Navarro Cabanes 12, Planta 3 - Despacho 7 <br> 46018 Valencia (Valencia)
             </address>
+            <a href="https://www.google.es/maps/place/Carrer+Navarro+Cabanes,+12,+46018+Val%C3%A8ncia/@39.4715299,
+                     -0.402309,17z/data=!3m1!4b1!4m5!3m4!1s0xd604f6eed52da45:0x14c08d4f16763c65!8m2!3d39.4715258!4d-0.
+                     4001203" target="_blank">
+            <button type="button" class="btn btn-info" >Ver en Google Maps</button></a>
              </div>
 
-             <div class="col-md-3">
+             <div class="col-md-3 col-sm-6">
                 <contacto>
-                    <h3> Event Factory</h3>
+                    <h3> Contacto</h3>
                    Tel: (034) 961 234 567 <br>
                    <a href="mailto; contacto@eventactory.com"
-                   title="contacto@envetfactory.com">contacto@eventfactory.com</a>
+                   title="contacto@envetfactory.com">contacto@eventfactory.com</a><br>
+                   <button type="button" class="btn btn-lg btn-primary">Contactar</button>
                    
                 </address>
                  </div>
         
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <h3>Redes Sociales</h3>
                 Twitter <br>
                 Linkedin <br>
                 Instagram <br>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 hidden-xs">
                 <h3>Sobre nosostros</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequatur tenetur rerum 
                     distinctio molestias obcaecati voluptates soluta cumque, natus id laborum in voluptatum optio 
