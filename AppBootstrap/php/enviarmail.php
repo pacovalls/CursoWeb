@@ -14,10 +14,40 @@ $mail = new PHPMailer;
 
 // Parámetros del OBjeto  $mail para el envio del correo
 
-$mail=>isSMTP();
-$mail=>Host = 'smtp.gmail.com';
-$mail=>SMTPAuth = 'true';
-$mail=>SMTPSecure = 'ssl';
-$mail=>Port = 465 // Puerto TCP para conectar el Servidor
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = 'true';
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465 // Puerto TCP para conectar el Servidor
+
+// Cuenta de GMail para identificarnos en sus servidor
+
+$mail->Username = 'XXXXXXX@gmail.com';
+$mail->Passwird = '***************';
+
+//Configuramos los datos para el envio de mail
+$mail->setFrom($email, $nombre);
+//Datos del usuario que envia el email
+$mail->adAddress('contacto@eventactory.com', 'Event Factory'); 
+// Recepto del email
+$mail->Subject = 'Mensaje enviado desde formulario de ocntacto de nuestra web';
+$mail->Body = "<h3>Datos del remiente</h3>Enviado por: ".$nombre."<br/>";
+$mail->Body.= "Email del ususario:".$email."<br/>";
+$mail->Body.= "Mensaje:" ".$mensaje";
+$mail->isHTML(true);
+
+// Enviamos el correo
+if ($mail->Send())
+    {
+    echo ('<script type="/javascript"'>
+            alert("El mensaje se ha enviado corectamente");
+            window.location="http://localhost/website/formulario.html"</script>);
+    }
+else 
+    {
+    echo ('<script type="/javascript"'>
+    alert("Ha habido un error al enviar el mensaje. intentalo de nuevo.");
+    window.location="http://localhost/website/formulario.html"</script>);
+    }
 
 ?>
