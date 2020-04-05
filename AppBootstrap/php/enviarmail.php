@@ -1,7 +1,7 @@
 <?php
 // Incluimos las librerias email de php
-include(class.phpmailer.php);
-include(class.smtp.php);
+include_once('class.phpmailer.php');
+include_once('class.smtp.php');
 
 //Recuperamos los campos del formulario en la variables de PHP
 // El nombre de cada variable PSOT cooresponde al parametro name del elemante del formulario
@@ -22,13 +22,13 @@ $mail->Port = 465 // Puerto TCP para conectar el Servidor
 
 // Cuenta de GMail para identificarnos en sus servidor
 
-$mail->Username = 'XXXXXXX@gmail.com';
-$mail->Passwird = '***************';
+$mail->Username = 'XXXXXXXXX@gmail.com';
+$mail->Password = '**********';
 
 //Configuramos los datos para el envio de mail
 $mail->setFrom($email, $nombre);
 //Datos del usuario que envia el email
-$mail->adAddress('contacto@eventactory.com', 'Event Factory'); 
+$mail->addAddress('contacto@eventactory.com', 'Event Factory'); 
 // Recepto del email
 $mail->Subject = 'Mensaje enviado desde formulario de ocntacto de nuestra web';
 $mail->Body = "<h3>Datos del remiente</h3>Enviado por: ".$nombre."<br/>";
@@ -49,5 +49,7 @@ else
     alert("Ha habido un error al enviar el mensaje. intentalo de nuevo.");
     window.location="http://localhost/website/formulario.html"</script>);
     }
+
+
 
 ?>
