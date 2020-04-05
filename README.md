@@ -1,2 +1,2 @@
 # CursoWeb
-Curso Web de GeekHubsAcademy
+Curso Web de GeekHubsAcademy casos practicos
